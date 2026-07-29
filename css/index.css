@@ -8,6 +8,7 @@
     --color-light: #F3F3F3;
     --color-white: #FFFFFF;
     --color-error: #E26868;
+    --color-fondo: #FDF8F6; 
 
     /* Fonts */
     --font-title-xxl: 500 clamp(32px, 5vw, 48px) "Poppins";
@@ -16,7 +17,7 @@
     --font-buttons-xl: 500 clamp(17px, 5vw, 19px) "Poppins";
 
     --font-body: 400 .9375rem "Poppins";
-    --font-link 500 9375rem "Poppins";
+    --font-link: 500 9375rem "Poppins";
 
     /* Spacing */
 
@@ -70,7 +71,7 @@ ol {
 }
 
 body {
-    color: var();
+    background-color: var(--color-fondo);
     font: var(--font-body);
 }
 
@@ -127,17 +128,33 @@ h4,
 
 }
 
-.title__block {
+
+/* Header */
+
+.header {
+    max-width: var(--size-max-width-xl);
+    padding: var(--spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.no-mobile {
+    justify-content: space-between;
     background-color: #3E2723;
-    color: var(--color-light)
 }
 
 .options {
     display: flex;
-    gap: var(--spacing-md)
+    color: var(--color-white);
+    justify-content: space-between;
+
 }
 
 .boton {
     background-color: var(--color-white);
     border-radius: 0;
 }
+
+
