@@ -16,6 +16,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
 
 </head>
 
@@ -33,31 +34,31 @@
 
                 <li>
                     <a href="index.html">
-                        Home
+                        HOME
                     </a>
                 </li>
 
                 <li>
                     <a href="shop.html" class="active">
-                        Shop
+                        SHOP
                     </a>
                 </li>
 
                 <li>
                     <a href="subscriptions.html">
-                        Subscriptions
+                        SUBSCRIPTIONS
                     </a>
                 </li>
 
                 <li>
                     <a href="locations.html">
-                        Locations
+                        LOCATIONS
                     </a>
                 </li>
 
                 <li>
                     <a href="about.html">
-                        About
+                        ABOUT
                     </a>
                 </li>
 
@@ -69,10 +70,324 @@
             ORDER NOW
         </a>
 
+        <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
     </header>
 
 
     <main class="shop-page">
+
+
+        <section class="recommendations" aria-label="Recommended products">
+
+            <div class="recommendations__header">
+
+                <div class="recommendations__heading">
+
+                    <span class="recommendations__label">
+                        CURATED SELECTION
+                    </span>
+
+                    <h1 class="recommendations__title">
+                        OUR RECOMMENDATIONS
+                    </h1>
+
+                </div>
+
+                <p class="recommendations__description">
+                    Selected products from the Archive collection,
+                    chosen for their character, precision and craft.
+                </p>
+
+            </div>
+
+
+            <div class="recommendations__carousel">
+
+                <button
+                    type="button"
+                    class="recommendations__arrow recommendations__arrow--prev"
+                    aria-label="Previous recommendation"
+                >
+                    ←
+                </button>
+
+
+                <div class="recommendations__viewport">
+
+                    <div class="recommendations__track">
+
+
+                        <article class="recommendation-card is-active">
+
+                            <div class="recommendation-card__image">
+
+                                <span class="recommendation-card__tag">
+                                    ETHIOPIA
+                                </span>
+
+                                <img
+                                    src="media/carrouselfotouna.png"
+                                    alt="Quill Sidamo Highland coffee"
+                                >
+
+                            </div>
+
+                            <div class="recommendation-card__content">
+
+                                <div class="recommendation-card__meta">
+
+                                    <span>
+                                        COFFEE
+                                    </span>
+
+                                    <span>
+                                        $24.00
+                                    </span>
+
+                                </div>
+
+                                <h2 class="recommendation-card__name">
+                                    Quill Sidamo Highland
+                                </h2>
+
+                                <p class="recommendation-card__notes">
+                                    Peach Blossom · Bergamot · Honey
+                                </p>
+
+                                <p class="recommendation-card__description">
+                                    A bright Ethiopian selection with floral
+                                    character and a clean, honeyed finish.
+                                </p>
+
+                                <a
+                                    href="checkout.html"
+                                    class="recommendation-card__button"
+                                >
+                                    SHOP NOW
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="recommendation-card">
+
+                            <div class="recommendation-card__image">
+
+                                <span class="recommendation-card__tag">
+                                    COLOMBIA / HUILA
+                                </span>
+
+                                <img
+                                    src="media/carrouselfotodos.png"
+                                    alt="Huila Reserve Dark coffee"
+                                >
+
+                            </div>
+
+                            <div class="recommendation-card__content">
+
+                                <div class="recommendation-card__meta">
+
+                                    <span>
+                                        COFFEE
+                                    </span>
+
+                                    <span>
+                                        $22.00
+                                    </span>
+
+                                </div>
+
+                                <h2 class="recommendation-card__name">
+                                    Huila Reserve Dark
+                                </h2>
+
+                                <p class="recommendation-card__notes">
+                                    Dark Chocolate · Molasses · Roasted Almond
+                                </p>
+
+                                <p class="recommendation-card__description">
+                                    A structured Colombian roast with deep
+                                    chocolate notes and a rich finish.
+                                </p>
+
+                                <a
+                                    href="checkout.html"
+                                    class="recommendation-card__button"
+                                >
+                                    SHOP NOW
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="recommendation-card">
+
+                            <div class="recommendation-card__image">
+
+                                <span class="recommendation-card__tag">
+                                    BREWING GEAR
+                                </span>
+
+                                <img
+                                    src="media/carrouselfototres.png"
+                                    alt="Hario V60 Ceramic Onyx"
+                                >
+
+                            </div>
+
+                            <div class="recommendation-card__content">
+
+                                <div class="recommendation-card__meta">
+
+                                    <span>
+                                        BREWING
+                                    </span>
+
+                                    <span>
+                                        $28.00
+                                    </span>
+
+                                </div>
+
+                                <h2 class="recommendation-card__name">
+                                    Hario V60 Ceramic - Onyx
+                                </h2>
+
+                                <p class="recommendation-card__notes">
+                                    Spiral Ribbing · Ceramic · Pour Over
+                                </p>
+
+                                <p class="recommendation-card__description">
+                                    Precise extraction with spiral ribbing
+                                    designed for controlled pour-over brewing.
+                                </p>
+
+                                <a
+                                    href="checkout.html"
+                                    class="recommendation-card__button"
+                                >
+                                    SHOP NOW
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="recommendation-card">
+
+                            <div class="recommendation-card__image">
+
+                                <span class="recommendation-card__tag">
+                                    PRECISION TOOLS
+                                </span>
+
+                                <img
+                                    src="media/carrouselfotocuatro.png"
+                                    alt="Archive Scale 1.2"
+                                >
+
+                            </div>
+
+                            <div class="recommendation-card__content">
+
+                                <div class="recommendation-card__meta">
+
+                                    <span>
+                                        EQUIPMENT
+                                    </span>
+
+                                    <span>
+                                        $145.00
+                                    </span>
+
+                                </div>
+
+                                <h2 class="recommendation-card__name">
+                                    Archive Scale 1.2
+                                </h2>
+
+                                <p class="recommendation-card__notes">
+                                    0.1g Accuracy · Flow Rate · Timer
+                                </p>
+
+                                <p class="recommendation-card__description">
+                                    Precision weighing with an integrated
+                                    flow-rate timer for repeatable brewing.
+                                </p>
+
+                                <a
+                                    href="checkout.html"
+                                    class="recommendation-card__button"
+                                >
+                                    SHOP NOW
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="recommendations__arrow recommendations__arrow--next"
+                    aria-label="Next recommendation"
+                >
+                    →
+                </button>
+
+            </div>
+
+
+            <div class="recommendations__controls">
+
+                <button
+                    type="button"
+                    class="recommendations__dot is-active"
+                    aria-label="Go to recommendation 1"
+                    aria-current="true"
+                ></button>
+
+                <button
+                    type="button"
+                    class="recommendations__dot"
+                    aria-label="Go to recommendation 2"
+                    aria-current="false"
+                ></button>
+
+                <button
+                    type="button"
+                    class="recommendations__dot"
+                    aria-label="Go to recommendation 3"
+                    aria-current="false"
+                ></button>
+
+                <button
+                    type="button"
+                    class="recommendations__dot"
+                    aria-label="Go to recommendation 4"
+                    aria-current="false"
+                ></button>
+
+            </div>
+
+        </section>
+
 
         <section class="shop-intro">
 
@@ -256,7 +571,11 @@
                 <div class="inventory__products">
 
 
-                    <article class="product-card">
+                    <article
+                        class="product-card"
+                        data-roast="light"
+                        data-region="ethiopia"
+                    >
 
                         <div class="product-card__image">
 
@@ -265,7 +584,7 @@
                             </span>
 
                             <img
-                                src="media/container (3).png"
+                                src="media/cafeimagenuno.png"
                                 alt="Quill Sidamo Highland coffee"
                             >
 
@@ -290,7 +609,10 @@
                     </article>
 
 
-                    <article class="product-card">
+                    <article
+                        class="product-card"
+                        data-category="equipment"
+                    >
 
                         <div class="product-card__image">
 
@@ -299,7 +621,7 @@
                             </span>
 
                             <img
-                                src="media/Hario V60 (1).png"
+                                src="media/harioimagen.png"
                                 alt="Hario V60 Ceramic Onyx"
                             >
 
@@ -324,7 +646,10 @@
                     </article>
 
 
-                    <article class="product-card">
+                    <article
+                        class="product-card"
+                        data-category="equipment"
+                    >
 
                         <div class="product-card__image">
 
@@ -333,7 +658,7 @@
                             </span>
 
                             <img
-                                src="media/Archive Scale.png"
+                                src="media/ArchiScale.png"
                                 alt="Archive Scale 1.2"
                             >
 
@@ -358,7 +683,11 @@
                     </article>
 
 
-                    <article class="product-card">
+                    <article
+                        class="product-card"
+                        data-roast="dark"
+                        data-region="colombia"
+                    >
 
                         <div class="product-card__image">
 
@@ -367,7 +696,7 @@
                             </span>
 
                             <img
-                                src="media/huila.png"
+                                src="media/cafecoluno.png"
                                 alt="Huila Reserve Dark coffee"
                             >
 
@@ -392,7 +721,10 @@
                     </article>
 
 
-                    <article class="product-card">
+                    <article
+                        class="product-card"
+                        data-category="equipment"
+                    >
 
                         <div class="product-card__image">
 
@@ -401,7 +733,7 @@
                             </span>
 
                             <img
-                                src="media/container (6).png"
+                                src="media/imagenkettle.png"
                                 alt="Gooseneck Flow Kettle"
                             >
 
@@ -426,7 +758,10 @@
                     </article>
 
 
-                    <article class="product-card">
+                    <article
+                        class="product-card"
+                        data-category="glassware"
+                    >
 
                         <div class="product-card__image">
 
@@ -435,7 +770,7 @@
                             </span>
 
                             <img
-                                src="media/container (7).png"
+                                src="media/archiglass.png"
                                 alt="Archive Glass Tumbler Set"
                             >
 
@@ -453,6 +788,272 @@
 
                             <p class="product-card__description">
                                 Double-walled isolation for thermal stability.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="product-card"
+                        data-roast="medium"
+                        data-region="kenya"
+                    >
+
+                        <div class="product-card__image">
+
+                            <span class="product-card__tag">
+                                KENYA
+                            </span>
+
+                            <img
+                                src="media/cafekenyauno.png"
+                                alt="Kenya Highlands coffee"
+                            >
+
+                        </div>
+
+                        <div class="product-card__content">
+
+                            <span class="product-card__price">
+                                $26.00
+                            </span>
+
+                            <h2 class="product-card__name">
+                                Kenya Highlands
+                            </h2>
+
+                            <p class="product-card__description">
+                                Blackcurrant, lime and a clean balanced finish.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="product-card"
+                        data-roast="dark"
+                        data-region="indonesia"
+                    >
+
+                        <div class="product-card__image">
+
+                            <span class="product-card__tag">
+                                INDONESIA
+                            </span>
+
+                            <img
+                                src="media/cafeindonesiauno.png"
+                                alt="Sumatra Estate coffee"
+                            >
+
+                        </div>
+
+                        <div class="product-card__content">
+
+                            <span class="product-card__price">
+                                $23.00
+                            </span>
+
+                            <h2 class="product-card__name">
+                                Sumatra Estate
+                            </h2>
+
+                            <p class="product-card__description">
+                                Dark chocolate, spice and a deep earthy finish.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="product-card"
+                        data-roast="dark"
+                        data-region="kenya"
+                    >
+
+                        <div class="product-card__image">
+
+                            <span class="product-card__tag">
+                                KENYA
+                            </span>
+
+                            <img
+                                src="media/cafekenyados.png"
+                                alt="Kenya Dark Estate coffee"
+                            >
+
+                        </div>
+
+                        <div class="product-card__content">
+
+                            <span class="product-card__price">
+                                $27.00
+                            </span>
+
+                            <h2 class="product-card__name">
+                                Kenya Dark Estate
+                            </h2>
+
+                            <p class="product-card__description">
+                                Cacao, black cherry and roasted sugar with a full body.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="product-card"
+                        data-roast="medium"
+                        data-region="ethiopia"
+                    >
+
+                        <div class="product-card__image">
+
+                            <span class="product-card__tag">
+                                ETHIOPIA
+                            </span>
+
+                            <img
+                                src="media/cafeeti.png"
+                                alt="Ethiopia Natural coffee"
+                            >
+
+                        </div>
+
+                        <div class="product-card__content">
+
+                            <span class="product-card__price">
+                                $27.00
+                            </span>
+
+                            <h2 class="product-card__name">
+                                Ethiopia Natural
+                            </h2>
+
+                            <p class="product-card__description">
+                                Ripe fruit, cocoa and floral sweetness with a soft finish.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="product-card"
+                        data-roast="medium"
+                        data-region="colombia"
+                    >
+
+                        <div class="product-card__image">
+
+                            <span class="product-card__tag">
+                                COLOMBIA
+                            </span>
+
+                            <img
+                                src="media/cafecoltres.png"
+                                alt="Colombia El Dorado coffee"
+                            >
+
+                        </div>
+
+                        <div class="product-card__content">
+
+                            <span class="product-card__price">
+                                $25.00
+                            </span>
+
+                            <h2 class="product-card__name">
+                                Colombia El Dorado
+                            </h2>
+
+                            <p class="product-card__description">
+                                Caramel, red apple and toasted almond with a silky body.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="product-card"
+                        data-roast="light"
+                        data-region="kenya"
+                    >
+
+                        <div class="product-card__image">
+
+                            <span class="product-card__tag">
+                                KENYA
+                            </span>
+
+                            <img
+                                src="media/cafekenyacuatro.png"
+                                alt="Kenya Kirinyaga coffee"
+                            >
+
+                        </div>
+
+                        <div class="product-card__content">
+
+                            <span class="product-card__price">
+                                $29.00
+                            </span>
+
+                            <h2 class="product-card__name">
+                                Kenya Kirinyaga
+                            </h2>
+
+                            <p class="product-card__description">
+                                Red berries, citrus peel and floral acidity with a bright finish.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article
+                        class="product-card"
+                        data-roast="light"
+                        data-region="colombia"
+                    >
+
+                        <div class="product-card__image">
+
+                            <span class="product-card__tag">
+                                COLOMBIA
+                            </span>
+
+                            <img
+                                src="media/cafecolultimo.png"
+                                alt="Colombia Sierra Light coffee"
+                            >
+
+                        </div>
+
+                        <div class="product-card__content">
+
+                            <span class="product-card__price">
+                                $24.00
+                            </span>
+
+                            <h2 class="product-card__name">
+                                Colombia Sierra Light
+                            </h2>
+
+                            <p class="product-card__description">
+                                Citrus, honey and stone fruit with a delicate clean finish.
                             </p>
 
                         </div>

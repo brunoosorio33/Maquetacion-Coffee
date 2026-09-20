@@ -16,61 +16,67 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/index.css">
+    <script defer src="js/index.js"></script>
 
 </head>
 
 <body>
 
-    <header class="header">
+        <header class="header">
 
-        <a href="index.html" class="logo">
-            ARCHIVE COFFEE
-        </a>
+    <a href="index.html" class="logo">
+        ARCHIVE COFFEE
+    </a>
 
-        <nav class="navigation" aria-label="Navegación principal">
+    <nav class="no-mobile" aria-label="Navegación principal">
 
-            <ul class="options">
+        <ul class="options">
 
-                <li>
-                    <a href="index.html">
-                        MENU
-                    </a>
-                </li>
+            <li>
+                <a href="index.html">
+                    HOME
+                </a>
+            </li>
 
-                <li>
-                    <a href="shop.html">
-                        SHOP
-                    </a>
-                </li>
+            <li>
+                <a href="shop.html" class="active">
+                    SHOP
+                </a>
+            </li>
 
-                <li>
-                    <a href="subscriptions.html" class="active">
-                        SUBSCRIPTIONS
-                    </a>
-                </li>
+            <li>
+                <a href="subscriptions.html">
+                    SUBSCRIPTIONS
+                </a>
+            </li>
 
-                <li>
-                    <a href="index.html#locations">
-                        LOCATIONS
-                    </a>
-                </li>
+            <li>
+                <a href="locations.html">
+                    LOCATIONS
+                </a>
+            </li>
 
-                <li>
-                    <a href="index.html#about">
-                        ABOUT
-                    </a>
-                </li>
+            <li>
+                <a href="about.html">
+                    ABOUT
+                </a>
+            </li>
 
-            </ul>
+        </ul>
 
-        </nav>
+    </nav>
 
-        <a href="checkout.html" class="order-button">
-            ORDER NOW
-        </a>
+    <a href="checkout.html" class="boton">
+        ORDER NOW
+    </a>
 
-    </header>
+    <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
+</header>
 
     <main>
 
