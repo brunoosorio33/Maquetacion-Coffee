@@ -3,7 +3,7 @@
     /* COLOR */
 
     --color-main: #3E2723;
-    --color-secundary: #5D4037;
+    --color-secondary: #5D4037;
     --color-dark: #1F1F1F;
     --color-light: #F3F3F3;
     --color-white: #FFFFFF;
@@ -13,10 +13,10 @@
 
     /*    FONTS */
 
-    --font-title-xxl: 500 clamp(32px, 5vw, 48px) "Poppins";
-    --font-title-xl: 500 clamp(24px, 5vw, 32px) "Poppins";
-    --font-title-lg: 400 clamp(19px, 5vw, 24px) "Inter";
-    --font-buttons-xl: 500 clamp(17px, 5vw, 19px) "Poppins";
+    --font-title-xxl: 500 clamp(2rem, 5vw, 3rem) "Poppins";
+    --font-title-xl: 500 clamp(1.5rem, 5vw, 2rem) "Poppins";
+    --font-title-lg: 400 clamp(1.1875rem, 5vw, 1.5rem) "Inter";
+    --font-buttons-xl: 500 clamp(1.0625rem, 5vw, 1.1875rem) "Poppins";
 
     --font-body: 400 .9375rem "Poppins";
     --font-link: 500 .9375rem "Poppins";
@@ -24,63 +24,59 @@
 
     /* SPACING */
 
-    --spacing-xxl: 64px;
-    --spacing-xl: 48px;
-    --spacing-lg: 32px;
-    --spacing-md: 16px;
-    --spacing-sm: 10px;
+    --spacing-xxl: 4rem;
+    --spacing-xl: 3rem;
+    --spacing-lg: 2rem;
+    --spacing-md: 1rem;
+    --spacing-sm: .625rem;
 
 
     /*  SIZE */
 
-    --size-icon-md: 24px;
+    --size-icon-md: 1.5rem;
 
-    --size-max-width: 964px;
-    --size-max-width-xl: 1024px;
+    --size-max-width: 60.25rem;
+    --size-max-width-xl: 64rem;
 
-    --size-min-width-sm: 210px;
-    --size-min-width: 320px;
+    --size-min-width-sm: 13.125rem;
+    --size-min-width: 20rem;
 
     --screen-mobile: 40rem;
 
 
     /*  COMPONENT SIZES */
 
-    --size-header-height: 64px;
+    --size-header-height: 4rem;
 
-    --size-button-min: 90px;
-    --size-button-checkout: 92px;
+    --size-button-min: 5.625rem;
+    --size-button-checkout: 5.75rem;
 
-    --size-hero-min: 512px;
-    --size-hero-tablet: 580px;
-    --size-hero-mobile: 550px;
+    --size-hero-min: 32rem;
+    --size-hero-tablet: 36.25rem;
+    --size-hero-mobile: 34.375rem;
 
-    --size-content-wide: 1200px;
-    --size-content-medium: 620px;
-    --size-content-small: 500px;
+    --size-content-wide: 75rem;
+    --size-content-medium: 38.75rem;
+    --size-content-small: 31.25rem;
 
-    --size-image-efficiency: 430px;
+    --size-image-efficiency: 26.875rem;
 
-    --size-subscription-hero: 200px;
+    --size-subscription-hero: 12.5rem;
 
-    --size-input-height: 32px;
-    --size-input-mobile: 38px;
+    --size-input-height: 2rem;
+    --size-input-mobile: 2.375rem;
 
-    --size-radio: 12px;
-    --size-checkbox: 12px;
 
-    --size-product-image: 40px;
-    --size-product-image-mobile: 48px;
 
-    --size-testimonial-photo: 32px;
+    --size-testimonial-photo: 2rem;
 
-    --size-encrypted-icon: 16px;
+    --size-encrypted-icon: 1rem;
 
 
     /*  RADIUS */
 
-    --radius-sm: 5px;
-    --radius-full: 100px;
+    --radius-sm: .3125rem;
+    --radius-full: 6.25rem;
 
 
     /* BORDERS */
@@ -93,7 +89,10 @@
 
     --transition-fast: .2s ease;
     --transition-image: .35s ease;
+
 }
+
+
 
 
 /*  RESET */
@@ -114,6 +113,51 @@ img {
     max-width: 100%;
     width: 100%;
 }
+
+
+picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.framework-card__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.framework-card__image picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.framework-card__image picture img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform var(--transition-image);
+}
+
+.framework-card:hover .framework-card__image picture img {
+    transform: scale(1.04);
+}
+
+
 
 ul,
 ol {
@@ -162,23 +206,23 @@ h4,
     padding: var(--spacing-sm) var(--spacing-lg);
     border-radius: var(--radius-full);
     text-align: center;
+}
 
-    &.btn--light {
-        color: var(--color-dark);
-        background-color: var(--color-light);
-    }
+.btn.btn--light {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+}
 
-    &.btn--dark {
-        color: var(--color-light);
-        background-color: var(--color-dark);
-    }
+.btn.btn--dark {
+    color: var(--color-light);
+    background-color: var(--color-dark);
 }
 
 
 .header {
     width: 100%;
     max-width: none;
-    min-height: 4rem;
+    min-height: var(--size-header-height);
     padding: 0 clamp(1.25rem, 5vw, 4rem);
     display: flex;
     align-items: center;
@@ -482,7 +526,7 @@ h4,
 
 .framework__intro {
     max-width: 38.75rem;
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .9rem;
     line-height: 1.65;
 }
@@ -570,7 +614,7 @@ h4,
 
 .framework-card p {
     margin-top: .625rem;
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .875rem;
     line-height: 1.6;
 }
@@ -618,7 +662,7 @@ h4,
     position: relative;
     z-index: 1;
     max-width: 35rem;
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .9rem;
     line-height: 1.7;
 }
@@ -664,7 +708,7 @@ h4,
 
 .efficiency__image {
     width: 100%;
-    height: 26.875rem;
+    height: var(--size-image-efficiency);
     overflow: hidden;
 }
 
@@ -677,7 +721,7 @@ h4,
 .subscriptions-hero {
     position: relative;
     width: 100%;
-    min-height: 12.5rem;
+    min-height: var(--size-subscription-hero);
     overflow: hidden;
     background-color: var(--color-light);
 }
@@ -701,7 +745,7 @@ h4,
     position: relative;
     z-index: 2;
     width: min(100%, var(--size-max-width));
-    min-height: 12.5rem;
+    min-height: var(--size-subscription-hero);
     margin: 0 auto;
     padding: 2.5rem var(--spacing-md);
     display: grid;
@@ -732,7 +776,7 @@ h4,
 
 .subscriptions-hero__description {
     max-width: 20rem;
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .75rem;
     line-height: 1.5;
 }
@@ -837,7 +881,7 @@ h4,
 .subscription-card__feature {
     position: relative;
     padding-left: .75rem;
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .625rem;
     line-height: 1.4;
 }
@@ -919,7 +963,7 @@ h4,
 }
 
 .testimonial__quote {
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .7rem;
     font-style: italic;
     line-height: 1.55;
@@ -933,8 +977,8 @@ h4,
 }
 
 .testimonial__photo {
-    width: 2rem;
-    height: 2rem;
+    width: var(--size-testimonial-photo);
+    height: var(--size-testimonial-photo);
     flex-shrink: 0;
     overflow: hidden;
 }
@@ -1019,7 +1063,7 @@ h4,
 
 .technical__answer {
     padding: 0 0 .75rem;
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .7rem;
     line-height: 1.5;
 }
@@ -1407,7 +1451,7 @@ h4,
     align-items: flex-start;
     gap: .5rem;
     margin-top: var(--spacing-md);
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .5625rem;
     line-height: 1.4;
 }
@@ -1474,7 +1518,7 @@ h4,
     display: flex;
     justify-content: space-between;
     gap: var(--spacing-md);
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .625rem;
 }
 
@@ -1522,8 +1566,8 @@ h4,
 }
 
 .encrypted-session__icon {
-    width: 1rem;
-    height: 1rem;
+    width: var(--size-encrypted-icon);
+    height: var(--size-encrypted-icon);
     flex-shrink: 0;
 }
 
@@ -1958,7 +2002,7 @@ h4,
     }
 
     .form-field input {
-        height: 2.375rem;
+        height: var(--size-input-mobile);
         font-size: .6875rem;
     }
 
@@ -2218,7 +2262,7 @@ h4,
 .shop-intro__description {
     max-width: 32rem;
     margin-top: .75rem;
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .6875rem;
     line-height: 1.55;
 }
@@ -2268,7 +2312,7 @@ h4,
     align-items: center;
     gap: .375rem;
     margin-bottom: .375rem;
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .5rem;
     line-height: 1.35;
     cursor: pointer;
@@ -3126,7 +3170,7 @@ h4,
 .recommendations__description {
     max-width: 22rem;
     justify-self: end;
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .6875rem;
     line-height: 1.65;
 }
@@ -3234,7 +3278,7 @@ h4,
 .recommendation-card__description {
     max-width: 24rem;
     margin-top: 1rem;
-    color: var(--color-secundary);
+    color: var(--color-secondary);
     font-size: .6875rem;
     line-height: 1.65;
 }
@@ -3451,3 +3495,5 @@ h4,
         font-size: .625rem;
     }
 }
+
+
